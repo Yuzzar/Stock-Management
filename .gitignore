@@ -1,0 +1,70 @@
+#===========================================
+# .gitignore - Stock Management (CI4)
+#===========================================
+
+#-------------------------
+# Environment & Secrets
+#-------------------------
+.env
+
+#-------------------------
+# Composer Dependencies
+#-------------------------
+vendor/
+
+#-------------------------
+# Writable (cache, logs, session, debug)
+#-------------------------
+writable/cache/*
+!writable/cache/index.html
+
+writable/logs/*
+!writable/logs/index.html
+
+writable/session/*
+!writable/session/index.html
+
+writable/uploads/*
+!writable/uploads/index.html
+
+writable/debugbar/*
+!writable/debugbar/index.html
+
+#-------------------------
+# Session files (public/null)
+#-------------------------
+public/null/
+
+#-------------------------
+# Temporary Files
+#-------------------------
+tmpclaude*
+php_errors.log
+
+#-------------------------
+# OS Junk Files
+#-------------------------
+.DS_Store
+Thumbs.db
+Desktop.ini
+._*
+*~
+
+#-------------------------
+# IDE / Editor
+#-------------------------
+.vscode/
+.idea/
+*.iml
+*.sublime-workspace
+*.sublime-project
+/nbproject/
+
+#-------------------------
+# Test & Build
+#-------------------------
+tests/coverage*
+phpunit
+/phpunit*.xml
+/results/
+/build/
